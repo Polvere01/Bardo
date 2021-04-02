@@ -8,10 +8,14 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/zen.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+    <script type="text/javascript" src="js/zen.js"></script>
     <title>Zen</title>
 </head>
 
 <body>
+
+
+
     <header class="top-container">
         <img class="top-container-logo" src="images/coffee-cup.svg" alt="">
         <p class="top-container-title">zen</p>
@@ -21,36 +25,72 @@
 
         <div class="sounds">
 
-            <div class="sound-item">
+            <div onclick="playAudioRain()" class="sound-item">
+                <audio id="audio-rain">
+                    <source src="audios/rain.wav" type="audio/mpeg">
+                </audio>
                 <img class="" src="images/rain.svg" alt="">
                 <p class="sound-item-p">#rain</p>
             </div>
 
-            <div class="sound-item">
+            <div onclick="playAudioFire()" class="sound-item">
+
+                <audio id="audio-fire">
+                    <source src="audios/campfire.wav" type="audio/mpeg">
+                </audio>
+                
                 <img class="" src="images/fire.svg" alt="">
-                <p class="sound-item-p">#rain</p>
+                <p class="sound-item-p">#fire</p>
             </div>
 
             <div class="sound-item">
                 <img class="" src="images/snowflake.svg" alt="">
-                <p class="sound-item-p">#rain</p>
+                <p class="sound-item-p">#snow</p>
             </div>
 
             <div class="sound-item">
-                <img class="" src="images/rain.svg" alt="">
-                <p class="sound-item-p">#rain</p>
+                <img class="" src="images/fall-tree-leaf.svg" alt="">
+                <p class="sound-item-p">#treeleaf</p>
             </div>
 
             <div class="sound-item">
-                <img class="" src="images/rain.svg" alt="">
-                <p class="sound-item-p">#rain</p>
+                <img class="" src="images/flash.svg" alt="">
+                <p class="sound-item-p">#Ray</p>
             </div>
+
+            <div class="sound-item">
+                <img class="" src="images/wind.svg" alt="">
+                <p class="sound-item-p">#wind</p>
+            </div>
+
+
+            <div class="sound-item">
+                <img class="" src="images/train.svg" alt="">
+                <p class="sound-item-p">#train</p>
+            </div>
+
+            <div class="sound-item">
+                <img class="" src="images/night.svg" alt="">
+                <p class="sound-item-p">#nigth</p>
+            </div>
+
+            <div class="sound-item">
+                <img class="" src="images/environment.svg" alt="">
+                <p class="sound-item-p">#forest</p>
+            </div>
+
+            <div class="sound-item">
+                <img class="" src="images/water.svg" alt="">
+                <p class="sound-item-p">#water</p>
+            </div>
+
+
 
         </div>
 
     </section>
     <footer>
-        
+
     </footer>
 </body>
 
