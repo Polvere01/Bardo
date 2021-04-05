@@ -25,7 +25,7 @@
 
         <div class="sounds">
 
-            <div onclick="playAudioRain()" class="sound-item">
+            <div onclick="playAudioRain(); moveCard(this)" class="sound-item">
                 <audio id="audio-rain">
                     <source src="audios/rain.wav" type="audio/mpeg">
                 </audio>
@@ -33,7 +33,7 @@
                 <p class="sound-item-p">#rain</p>
             </div>
 
-            <div onclick="playAudioFire()" class="sound-item">
+            <div onclick="playAudioFire(); moveCard(this)" class="sound-item">
 
                 <audio id="audio-fire">
                     <source src="audios/campfire.wav" type="audio/mpeg">
@@ -53,7 +53,7 @@
                 <p class="sound-item-p">#treeleaf</p>
             </div>
 
-            <div onclick="playAudioThunder()" class="sound-item">
+            <div onclick="playAudioThunder(); moveCard(this)" class="sound-item">
                 <audio id="audio-thunder">
                     <source src="audios/thunder.wav" type="audio/mpeg">
                 </audio>
@@ -61,7 +61,7 @@
                 <p class="sound-item-p">#thunder</p>
             </div>
 
-            <div onclick="playAudioWind()" class="sound-item">
+            <div onclick="playAudioWind(); moveCard(this)" class="sound-item">
                 <audio id="audio-wind">
                     <source src="audios/wind.wav" type="audio/mpeg">
                 </audio>
@@ -70,7 +70,7 @@
             </div>
 
 
-            <div onclick="playAudioTrain()" class="sound-item">
+            <div onclick="playAudioTrain(); moveCard(this)" class="sound-item">
                 <audio id="audio-train">
                     <source src="audios/train.wav" type="audio/mpeg">
                 </audio>

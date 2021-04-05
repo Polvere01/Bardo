@@ -88,4 +88,15 @@ function playAudioThunder() {
 
 }
 
+function moveCard(item){
+    var cardImg = item.getElementsByTagName("img");
+
+    if (cardImg[0].classList.contains("sound-item-click")){
+        cardImg[0].classList.remove("sound-item-click");
+    }
+    else{
+        cardImg[0].classList.add("sound-item-click");
+    }
+}
+
 
