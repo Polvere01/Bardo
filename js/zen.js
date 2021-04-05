@@ -1,8 +1,9 @@
 
 var reproduzindoRain = false;
 var reproduzindoCampFire = false;
-var reproduzindoCampWind = false;
-var reproduzindoCampTrain = false;
+var reproduzindoWind = false;
+var reproduzindoTrain = false;
+var reproduzindoThunder = false;
 
 function playAudioRain() {
     audioObj = document.getElementById("audio-rain")
@@ -43,13 +44,13 @@ function playAudioWind() {
     audioObj.loop = true;
     audioObj.volume = 1;
 
-    if (reproduzindoCampWind == false) {
+    if (reproduzindoWind == false) {
         audioObj.play();
-        reproduzindoCampWind = true;
+        reproduzindoWind = true;
     }
     else{
         audioObj.pause();
-        reproduzindoCampWind = false;
+        reproduzindoWind = false;
     }
 
 }
@@ -59,13 +60,30 @@ function playAudioTrain() {
     audioObj.loop = true;
     audioObj.volume = 1;
 
-    if (reproduzindoCampTrain == false) {
+    if (reproduzindoTrain == false) {
         audioObj.play();
-        reproduzindoCampTrain = true;
+        reproduzindoTrain = true;
     }
     else{
         audioObj.pause();
-        reproduzindoCampTrain = false;
+        reproduzindoTrain = false;
+    }
+
+}
+
+
+function playAudioThunder() {
+    audioObj = document.getElementById("audio-thunder")
+    audioObj.loop = true;
+    audioObj.volume = 1;
+
+    if (reproduzindoThunder == false) {
+        audioObj.play();
+        reproduzindoThunder = true;
+    }
+    else{
+        audioObj.pause();
+        reproduzindoThunder = false;
     }
 
 }
