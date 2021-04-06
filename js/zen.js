@@ -89,7 +89,7 @@ function playAudioThunder() {
 }
 
 function moveCard(item){
-    var cardImg = item.getElementsByTagName("img");
+    var cardImg = item.getElementsByTagName("svg");
 
     if (cardImg[0].classList.contains("sound-item-click")){
         cardImg[0].classList.remove("sound-item-click");

@@ -11,9 +11,10 @@ body {
     background-color: #578c90;
     font-family: 'Oxygen';
     height: 100vh;
-    background-image: url(../images/img.jpg);
+    background-image: url(../images/original.gif);
     background-attachment: fixed, fixed;
     background-size: cover;
+    color: white;
 }
 
 .clearfix:after, .row:after {
@@ -63,7 +64,8 @@ body {
 }
 
 .sound-item {
-    flex: 33%
+    flex: 33%;
+    padding-bottom: 2em;
 }
 
 .sound-item img {
@@ -73,8 +75,16 @@ body {
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
+svg{
+    width: 5em;
+    margin: 0 auto;
+    display: block;
+    fill: white;
+}
+
 .sound-item-click {
     animation: move 0.5s ease-in-out infinite alternate;
+    fill: rgb(81, 81, 243);
 }
 
 .sound-item-p {
@@ -83,7 +93,6 @@ body {
 
 .bottom-container {
     width: 100%;
-    background-color: #e2e2e21a;
 }
 
 .bottom-container p {
