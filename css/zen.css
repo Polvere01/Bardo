@@ -11,25 +11,19 @@ body {
     background-color: #c56874;
     font-family: 'Oxygen';
     height: 100vh;
-    width: 100vw;
-    background-image: url(../images/original.gif);
+     background-image: url(../images/original-2.gif);
     background-attachment: fixed, fixed;
     background-size: auto;
     color: white;
+    overflow: auto;
 
 }
 
-/* .lateral{
-    position: absolute;
-    height: 100vh;
-    width: 4em;
-
-} */
 
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-rows: 1fr 2fr 0fr;
 
 }
 .top-container {
