@@ -16,6 +16,7 @@ body {
     background-attachment: fixed, fixed;
     background-size: auto;
     color: white;
+
 }
 
 /* .lateral{
@@ -28,16 +29,14 @@ body {
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr;
-    
+    grid-template-rows: 20vh 70vh 10vh;
+
 }
 .top-container {
-    height: 15em;
 }
 
 .top-container-logo {
-    max-width: 5em;
-    max-height: 5em;
+
     display: block;
     margin: 0 auto;
 }
