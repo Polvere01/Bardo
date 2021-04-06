@@ -11,6 +11,7 @@ body {
     background-color: #c56874;
     font-family: 'Oxygen';
     height: 100vh;
+    width: 100vw;
     background-image: url(../images/original.gif);
     background-attachment: fixed, fixed;
     background-size: auto;
