@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #578c90;
+    background-color: ##c56874;
     font-family: 'Oxygen';
     height: 100vh;
     background-image: url(../images/original.gif);
@@ -17,14 +17,14 @@ body {
     color: white;
 }
 
-.clearfix:after, .row:after {
-    content: ' ';
-    display: block;
-    clear: both;
-}
+/* .lateral{
+    position: absolute;
+    height: 100vh;
+    width: 4em;
 
+} */
 .top-container {
-    height: 120px;
+    height: 15em;
 }
 
 .top-container-logo {
@@ -50,7 +50,7 @@ body {
 
 .center-container-subtitle {
     margin: 0 auto;
-    padding-top: 5em;
+    
     text-align: center;
     font-size: 2em;
 }
