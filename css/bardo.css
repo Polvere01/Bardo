@@ -63,8 +63,6 @@ body {
     height: 10em;
     animation: moveMoon 3s forwards;
     overflow: auto;
-    z-index: -1;
-    border: 1px solid black transparent;
 }
 
 .container {
@@ -111,6 +109,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
 }
 
 .sound-item {
@@ -123,8 +122,6 @@ svg {
     margin: 0 auto;
     display: block;
     fill: white;
-    filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
-    -webkit-filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
 }
 
 .sound-item-click {
@@ -163,8 +160,6 @@ svg {
         height: 5em;
         animation: moveMoonMedia 3s forwards;
         position: absolute;
-        z-index: 9999;
-   
     }
     .top-container {
         width: 80%;
