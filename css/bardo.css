@@ -25,7 +25,7 @@
     }
     100% {
         opacity: 1;
-        transform: translateY(50em) rotate(0deg);
+        transform: translateY(55em) rotate(0deg);
     }
 }
 
@@ -50,7 +50,7 @@ body {
 
 .background-city {
     background-color: rgb(48, 56, 83);
-    background-image: url(../images/chicago2.png);
+    background-image: url(../images/chicago2-removebg.png);
     background-position: left bottom, right top;
     background-repeat: no-repeat, no-repeat;
     background-size: 100% auto;
@@ -82,37 +82,31 @@ body {
 }
 
 .top-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 800px;
     margin: 0 auto;
 }
 
-.top-container-flex {
-    flex: 50%;
-}
-
-.top-img {
-    background: url(../images/airplane.png);
-    background-repeat: no-repeat, no-repeat;
-    height: 100%;
-    background-position: center center;
-    animation: moveAirplane 2s linear alternate-reverse infinite;
+.top-container-name {
+    font-size: 3em;
+    text-align: center;
+    color: white;
+    filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
 }
 
 .top-container-title {
     margin: 0;
     text-align: center;
     font-size: 3em;
-    padding-top: 2em;
+    padding-top: 1em;
+    color: white;
+    filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
 }
 
 .center-container-subtitle {
     margin: 0 auto;
     text-align: center;
     font-size: 2em;
+    padding-top: 1em;
+    filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
 }
 
 .sounds {
@@ -181,13 +175,7 @@ svg {
     .top-container-title {
         font-size: 2em;
     }
-
-    .top-img {
-        background: url(../images/airplane-resize.png);
-        background-repeat: no-repeat, no-repeat;
-        height: 80px;
-        background-position: center center;
-        animation: moveAirplane 2s linear alternate-reverse infinite;
+    .center-container-subtitle {
+        font-size: 1.7em;
     }
-    
 }
