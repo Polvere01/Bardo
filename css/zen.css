@@ -8,28 +8,26 @@
 }
 
 @keyframes moveMoon {
-    0%{
+    0% {
         opacity: 0;
         transform: translateY(0em) rotate(180deg);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(30em) rotate(0deg);
     }
 }
 
 @keyframes moveMoonMedia {
-    0%{
+    0% {
         opacity: 0;
         transform: translateY(0em) rotate(180deg);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(50em) rotate(0deg);
     }
 }
-
-
 
 body {
     background-color: #28465c;
@@ -51,10 +49,10 @@ body {
     -o-background-size: 100% auto;
     -moz-background-size: 100% auto;
     -webkit-background-size: 100% auto;
+    z-index: -1;
 }
 
-
-.moon{
+.moon {
     background-image: url(../images/moon.png);
     position: absolute;
     top: 10px;
@@ -67,7 +65,6 @@ body {
     animation: moveMoon 3s forwards;
     overflow: auto;
 }
-
 
 .container {
     display: grid;
@@ -144,12 +141,11 @@ svg {
 
 @media screen and (max-width: 750px) {
     .background-city {
-        background-attachment:scroll;
+        background-attachment: scroll;
     }
-    .moon{
+    .moon {
         width: 5em;
         height: 5em;
         animation: moveMoonMedia 3s forwards;
-        z-index: -1;
     }
 }
