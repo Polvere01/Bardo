@@ -50,7 +50,7 @@ body {
 
 .background-city {
     background-color: rgb(48, 56, 83);
-    background-image: url(../images/chicago2-removebg.png);
+    background-image: url(../images/chicago2.png);
     background-position: left bottom, right top;
     background-repeat: no-repeat, no-repeat;
     background-size: 100% auto;
