@@ -150,6 +150,6 @@ svg {
         width: 5em;
         height: 5em;
         animation: moveMoonMedia 3s forwards;
-        z-index: 9999;
+        z-index: -1;
     }
 }
