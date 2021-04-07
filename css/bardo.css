@@ -73,6 +73,8 @@ body {
     height: 10em;
     animation: moveMoon 3s forwards;
     overflow: auto;
+    z-index: -1;
+    border: 1px solid black transparent;
 }
 
 .container {
@@ -166,8 +168,7 @@ svg {
         height: 5em;
         animation: moveMoonMedia 3s forwards;
         position: absolute;
-        z-index: -1;
-        border: 1px solid black transparent;
+   
     }
     .top-container {
         width: 80%;
