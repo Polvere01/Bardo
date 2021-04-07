@@ -11,14 +11,15 @@ body {
     background-color: #28465c;
     font-family: 'Oxygen';
     height: 100%;
-    width: 100%;
+    width: 100;
     color: white;
     overflow: auto;
 }
 
 .background-city {
     background-color: rgb(48, 56, 83);
-    background-image: url(../images/chicago2.png);
+    background-image: url(https://i.ibb.co/6FLcjTj/chicago2.png);
+    /* background-image: url(../images/chicago2.png); */
     background-position: left bottom, right top;
     background-repeat: no-repeat, no-repeat;
     background-size: 100% auto;
