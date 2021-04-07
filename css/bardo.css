@@ -75,7 +75,7 @@ body {
     margin: 0 auto;
 }
 
-.top-container-svg{
+.top-container-svg {
     fill: black !important;
 }
 
@@ -84,6 +84,7 @@ body {
     text-align: center;
     color: white;
     filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
+    -webkit-filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
 }
 
 .top-container-title {
@@ -93,6 +94,7 @@ body {
     padding-top: 1em;
     color: white;
     filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
+    -webkit-filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
 }
 
 .center-container-subtitle {
@@ -101,6 +103,7 @@ body {
     font-size: 2em;
     padding-top: 1em;
     filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
+    -webkit-filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
 }
 
 .sounds {
@@ -110,6 +113,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
+    -webkit-filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
 }
 
 .sound-item {
