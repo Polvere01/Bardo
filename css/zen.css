@@ -113,7 +113,6 @@ svg {
     display: block;
     fill: white;
     filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
-    padding-bottom: 2em;
 }
 
 .sound-item-click {
@@ -151,5 +150,6 @@ svg {
         width: 5em;
         height: 5em;
         animation: moveMoonMedia 3s forwards;
+        z-index: 9999;
     }
 }
