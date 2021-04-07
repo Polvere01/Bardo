@@ -11,6 +11,7 @@ body {
     background-color: #28465c;
     font-family: 'Oxygen';
     height: 100%;
+    width: 100%;
     color: white;
     overflow: auto;
 }
@@ -19,9 +20,12 @@ body {
     background-color: rgb(48, 56, 83);
     background-image: url(../images/chicago2.png);
     background-position: left bottom, right top;
-	background-repeat: no-repeat, no-repeat;
-	 background-size: 100% auto; 
-	background-attachment: fixed, fixed;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed, fixed;
+    -o-background-size: 100% auto;
+    -moz-background-size: 100% auto;;
+    -webkit-background-size: 100% auto;;
 }
 
 .container {
