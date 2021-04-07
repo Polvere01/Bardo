@@ -64,7 +64,7 @@ body {
     background-size: 100% auto;
     width: 10em;
     height: 10em;
-    animation: moveMoon 1.5s forwards;
+    animation: moveMoon 3s forwards;
     overflow: auto;
 }
 
@@ -149,6 +149,6 @@ svg {
     .moon{
         width: 5em;
         height: 5em;
-        animation: moveMoonMedia 1.5s forwards;
+        animation: moveMoonMedia 3s forwards;
     }
 }
