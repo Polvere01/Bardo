@@ -63,6 +63,7 @@ body {
     height: 10em;
     animation: moveMoon 3s forwards;
     overflow: auto;
+    z-index: -1;
 }
 
 .container {
