@@ -163,6 +163,7 @@ svg {
         height: 5em;
         animation: moveMoonMedia 3s forwards;
         position: absolute;
+        z-index: 9999;
    
     }
     .top-container {
