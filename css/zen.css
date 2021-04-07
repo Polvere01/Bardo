@@ -54,7 +54,7 @@ body {
 
 .moon {
     background-image: url(../images/moon.png);
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 3em;
     background-position: left bottom, right top;
@@ -147,5 +147,10 @@ svg {
         width: 5em;
         height: 5em;
         animation: moveMoonMedia 3s forwards;
+        position: absolute;
+    }
+    .top-container-title {
+        padding-top: 1em;
+        font-size: 2em;
     }
 }
