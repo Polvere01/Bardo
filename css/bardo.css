@@ -87,6 +87,10 @@ body {
     margin: 0 auto;
 }
 
+.top-container-svg{
+    fill: black !important;
+}
+
 .top-container-name {
     font-size: 3em;
     text-align: center;
