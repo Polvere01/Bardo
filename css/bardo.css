@@ -25,16 +25,7 @@
     }
     100% {
         opacity: 1;
-        transform: translateY(55em) rotate(0deg);
-    }
-}
-
-@keyframes moveAirplane {
-    0% {
-        transform: translateY(0em)
-    }
-    100% {
-        transform: translateY(1em)
+        transform: translateY(65em) rotate(0deg);
     }
 }
 
@@ -134,6 +125,7 @@ svg {
     display: block;
     fill: white;
     filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
+    -webkit-filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
 }
 
 .sound-item-click {
