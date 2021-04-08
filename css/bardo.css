@@ -25,7 +25,7 @@
     }
     100% {
         opacity: 1;
-        transform: translateY(5em) rotate(0deg);
+        transform: translateY(65em) rotate(0deg);
     }
 }
 
@@ -62,8 +62,7 @@ body {
     width: 10em;
     height: 10em;
     animation: moveMoon 3s forwards;
-    overflow: auto;
-    z-index: -1;
+    overflow: auto   
 }
 
 .container {
@@ -84,8 +83,7 @@ body {
     font-size: 3em;
     text-align: center;
     color: white;
-    filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
-    -webkit-filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
+  
 }
 
 .top-container-title {
@@ -94,8 +92,7 @@ body {
     font-size: 3em;
     padding-top: 1em;
     color: white;
-    filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
-    -webkit-filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
+
 }
 
 .center-container-subtitle {
@@ -103,8 +100,7 @@ body {
     text-align: center;
     font-size: 2em;
     padding-top: 1em;
-    filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
-    -webkit-filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
+
 }
 
 .sounds {
@@ -113,8 +109,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
-    -webkit-filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
+
 }
 
 .sound-item {
@@ -164,7 +159,7 @@ svg {
         width: 5em;
         height: 5em;
         animation: moveMoonMedia 3s forwards;
-        position: fixed;
+        position: absolute;
     }
     .top-container {
         width: 80%;
