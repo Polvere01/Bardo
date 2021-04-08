@@ -3,9 +3,12 @@ var reproduzindoRain = false;
 var reproduzindoCampFire = false;
 var reproduzindoWind = false;
 var reproduzindoBell = false;
-var reproduzindoTrain = false;
+var reproduzindoDesk = false
 var reproduzindoThunder = false;
+var reproduzindoTrain = false;
+var reproduzindoNight = false;
 var reproduzindoForest = false;
+var reproduzindoOcean = false;
 
 function playAudioRain() {
     audioObj = document.getElementById("audio-rain")
@@ -73,6 +76,22 @@ function playAudioBell() {
 
 }
 
+function playAudioDesk() {
+    audioObj = document.getElementById("audio-desk")
+    audioObj.loop = true;
+    audioObj.volume = 1;
+
+    if (reproduzindoDesk == false) {
+        audioObj.play();
+        reproduzindoDesk = true;
+    }
+    else{
+        audioObj.pause();
+        reproduzindoDesk = false;
+    }
+
+}
+
 function playAudioTrain() {
     audioObj = document.getElementById("audio-train")
     audioObj.loop = true;
@@ -85,6 +104,23 @@ function playAudioTrain() {
     else{
         audioObj.pause();
         reproduzindoTrain = false;
+    }
+
+}
+
+
+function playAudioNight() {
+    audioObj = document.getElementById("audio-night")
+    audioObj.loop = true;
+    audioObj.volume = 1;
+
+    if (reproduzindoNight == false) {
+        audioObj.play();
+        reproduzindoNight = true;
+    }
+    else{
+        audioObj.pause();
+        reproduzindoNight = false;
     }
 
 }
@@ -104,6 +140,24 @@ function playAudioForest() {
     }
 
 }
+
+
+function playAudioOcean() {
+    audioObj = document.getElementById("audio-forest")
+    audioObj.loop = true;
+    audioObj.volume = 1;
+
+    if (reproduzindoOcean == false) {
+        audioObj.play();
+        reproduzindoOcean = true;
+    }
+    else{
+        audioObj.pause();
+        reproduzindoOcean = false;
+    }
+
+}
+
 
 
 function playAudioThunder() {
@@ -158,6 +212,16 @@ function moveCardBell(item){
     }
 }
 
+function moveCardDesk(item){
+    var cardImg = item.getElementsByTagName("svg");
+
+    if (cardImg[0].classList.contains("sound-item-click-desk")){
+        cardImg[0].classList.remove("sound-item-click-desk");
+    }
+    else{
+        cardImg[0].classList.add("sound-item-click-desk");
+    }
+}
 
 function moveCardThunder(item){
     var cardImg = item.getElementsByTagName("svg");
@@ -171,6 +235,38 @@ function moveCardThunder(item){
 }
 
 
+function moveCardWind(item){
+    var cardImg = item.getElementsByTagName("svg");
+
+    if (cardImg[0].classList.contains("sound-item-click-wind")){
+        cardImg[0].classList.remove("sound-item-click-wind");
+    }
+    else{
+        cardImg[0].classList.add("sound-item-click-wind");
+    }
+}
+
+function moveCardTrain(item){
+    var cardImg = item.getElementsByTagName("svg");
+
+    if (cardImg[0].classList.contains("sound-item-click-train")){
+        cardImg[0].classList.remove("sound-item-click-train");
+    }
+    else{
+        cardImg[0].classList.add("sound-item-click-train");
+    }
+}
+
+function moveCardNight(item){
+    var cardImg = item.getElementsByTagName("svg");
+
+    if (cardImg[0].classList.contains("sound-item-click-night")){
+        cardImg[0].classList.remove("sound-item-click-night");
+    }
+    else{
+        cardImg[0].classList.add("sound-item-click-night");
+    }
+}
 
 function moveCardForest(item){
     var cardImg = item.getElementsByTagName("svg");
@@ -180,5 +276,16 @@ function moveCardForest(item){
     }
     else{
         cardImg[0].classList.add("sound-item-click-forest");
+    }
+}
+
+function moveCardOcean(item){
+    var cardImg = item.getElementsByTagName("svg");
+
+    if (cardImg[0].classList.contains("sound-item-click-ocean")){
+        cardImg[0].classList.remove("sound-item-click-ocean");
+    }
+    else{
+        cardImg[0].classList.add("sound-item-click-ocean");
     }
 }
