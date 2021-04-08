@@ -143,7 +143,7 @@ function playAudioForest() {
 
 
 function playAudioOcean() {
-    audioObj = document.getElementById("audio-forest")
+    audioObj = document.getElementById("audio-ocean")
     audioObj.loop = true;
     audioObj.volume = 1;
 
