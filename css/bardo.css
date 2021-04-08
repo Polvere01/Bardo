@@ -125,7 +125,52 @@ svg {
     filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
 }
 
-.sound-item-click {
+.sound-item-click-rain {
+    animation: move 0.5s ease-in-out infinite alternate;
+    fill: rgb(81, 81, 243);
+}
+
+.sound-item-click-fire {
+    animation: move 0.5s ease-in-out infinite alternate;
+    fill: rgb(247, 87, 0);
+}
+
+.sound-item-click-bell {
+    animation: move 0.5s ease-in-out infinite alternate;
+    fill: rgb(247, 211, 96);
+}
+
+.sound-item-click-tree {
+    animation: move 0.5s ease-in-out infinite alternate;
+    fill: rgb(81, 81, 243);
+}
+
+.sound-item-click-thunder {
+    animation: move 0.5s ease-in-out infinite alternate;
+    fill: rgb(116, 169, 194);
+}
+
+.sound-item-click-wind {
+    animation: move 0.5s ease-in-out infinite alternate;
+    fill: rgb(81, 81, 243);
+}
+
+.sound-item-click-train {
+    animation: move 0.5s ease-in-out infinite alternate;
+    fill: rgb(81, 81, 243);
+}
+
+.sound-item-click-night {
+    animation: move 0.5s ease-in-out infinite alternate;
+    fill: rgb(81, 81, 243);
+}
+
+.sound-item-click-forest {
+    animation: move 0.5s ease-in-out infinite alternate;
+    fill: rgb(53, 77, 46);
+}
+
+.sound-item-click-ocean {
     animation: move 0.5s ease-in-out infinite alternate;
     fill: rgb(81, 81, 243);
 }

@@ -2,8 +2,10 @@
 var reproduzindoRain = false;
 var reproduzindoCampFire = false;
 var reproduzindoWind = false;
+var reproduzindoBell = false;
 var reproduzindoTrain = false;
 var reproduzindoThunder = false;
+var reproduzindoForest = false;
 
 function playAudioRain() {
     audioObj = document.getElementById("audio-rain")
@@ -55,6 +57,22 @@ function playAudioWind() {
 
 }
 
+function playAudioBell() {
+    audioObj = document.getElementById("audio-bell")
+    audioObj.loop = true;
+    audioObj.volume = 1;
+
+    if (reproduzindoBell == false) {
+        audioObj.play();
+        reproduzindoBell = true;
+    }
+    else{
+        audioObj.pause();
+        reproduzindoBell = false;
+    }
+
+}
+
 function playAudioTrain() {
     audioObj = document.getElementById("audio-train")
     audioObj.loop = true;
@@ -67,6 +85,22 @@ function playAudioTrain() {
     else{
         audioObj.pause();
         reproduzindoTrain = false;
+    }
+
+}
+
+function playAudioForest() {
+    audioObj = document.getElementById("audio-forest")
+    audioObj.loop = true;
+    audioObj.volume = 1;
+
+    if (reproduzindoForest == false) {
+        audioObj.play();
+        reproduzindoForest = true;
+    }
+    else{
+        audioObj.pause();
+        reproduzindoForest = false;
     }
 
 }
@@ -88,15 +122,63 @@ function playAudioThunder() {
 
 }
 
-function moveCard(item){
+function moveCardRain(item){
     var cardImg = item.getElementsByTagName("svg");
 
-    if (cardImg[0].classList.contains("sound-item-click")){
-        cardImg[0].classList.remove("sound-item-click");
+    if (cardImg[0].classList.contains("sound-item-click-rain")){
+        cardImg[0].classList.remove("sound-item-click-rain");
     }
     else{
-        cardImg[0].classList.add("sound-item-click");
+        cardImg[0].classList.add("sound-item-click-rain");
     }
 }
 
 
+
+function moveCardFire(item){
+    var cardImg = item.getElementsByTagName("svg");
+
+    if (cardImg[0].classList.contains("sound-item-click-fire")){
+        cardImg[0].classList.remove("sound-item-click-fire");
+    }
+    else{
+        cardImg[0].classList.add("sound-item-click-fire");
+    }
+}
+
+
+function moveCardBell(item){
+    var cardImg = item.getElementsByTagName("svg");
+
+    if (cardImg[0].classList.contains("sound-item-click-bell")){
+        cardImg[0].classList.remove("sound-item-click-bell");
+    }
+    else{
+        cardImg[0].classList.add("sound-item-click-bell");
+    }
+}
+
+
+function moveCardThunder(item){
+    var cardImg = item.getElementsByTagName("svg");
+
+    if (cardImg[0].classList.contains("sound-item-click-thunder")){
+        cardImg[0].classList.remove("sound-item-click-thunder");
+    }
+    else{
+        cardImg[0].classList.add("sound-item-click-thunder");
+    }
+}
+
+
+
+function moveCardForest(item){
+    var cardImg = item.getElementsByTagName("svg");
+
+    if (cardImg[0].classList.contains("sound-item-click-forest")){
+        cardImg[0].classList.remove("sound-item-click-forest");
+    }
+    else{
+        cardImg[0].classList.add("sound-item-click-forest");
+    }
+}
