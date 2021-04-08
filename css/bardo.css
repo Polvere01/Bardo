@@ -25,7 +25,7 @@
     }
     100% {
         opacity: 1;
-        transform: translateY(75em) rotate(0deg);
+        transform: translateY(55em) rotate(0deg);
     }
 }
 
@@ -119,7 +119,6 @@ body {
 
 svg {
     width: 5em;
-    padding: 0.5em;
     margin: 0 auto;
     display: block;
     fill: white;
