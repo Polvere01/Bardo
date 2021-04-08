@@ -25,7 +25,7 @@
     }
     100% {
         opacity: 1;
-        transform: translateY(55em) rotate(0deg);
+        transform: translateY(5em) rotate(0deg);
     }
 }
 
@@ -64,7 +64,6 @@ body {
     animation: moveMoon 3s forwards;
     overflow: auto;
     z-index: -1;
-    display: block;
 }
 
 .container {
@@ -165,7 +164,7 @@ svg {
         width: 5em;
         height: 5em;
         animation: moveMoonMedia 3s forwards;
-        position: absolute;
+        position: fixed;
     }
     .top-container {
         width: 80%;
