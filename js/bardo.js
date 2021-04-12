@@ -19,7 +19,7 @@ function playAudioRain() {
         audioObj.play();
         reproduzindoRain = true;
     }
-    else{
+    else {
         audioObj.pause();
         reproduzindoRain = false;
     }
@@ -36,7 +36,7 @@ function playAudioFire() {
         audioObj.play();
         reproduzindoCampFire = true;
     }
-    else{
+    else {
         audioObj.pause();
         reproduzindoCampFire = false;
     }
@@ -53,7 +53,7 @@ function playAudioWind() {
         audioObj.play();
         reproduzindoWind = true;
     }
-    else{
+    else {
         audioObj.pause();
         reproduzindoWind = false;
     }
@@ -69,7 +69,7 @@ function playAudioBell() {
         audioObj.play();
         reproduzindoBell = true;
     }
-    else{
+    else {
         audioObj.pause();
         reproduzindoBell = false;
     }
@@ -85,7 +85,7 @@ function playAudioDesk() {
         audioObj.play();
         reproduzindoDesk = true;
     }
-    else{
+    else {
         audioObj.pause();
         reproduzindoDesk = false;
     }
@@ -101,7 +101,7 @@ function playAudioTrain() {
         audioObj.play();
         reproduzindoTrain = true;
     }
-    else{
+    else {
         audioObj.pause();
         reproduzindoTrain = false;
     }
@@ -118,7 +118,7 @@ function playAudioNight() {
         audioObj.play();
         reproduzindoNight = true;
     }
-    else{
+    else {
         audioObj.pause();
         reproduzindoNight = false;
     }
@@ -134,7 +134,7 @@ function playAudioForest() {
         audioObj.play();
         reproduzindoForest = true;
     }
-    else{
+    else {
         audioObj.pause();
         reproduzindoForest = false;
     }
@@ -151,7 +151,7 @@ function playAudioOcean() {
         audioObj.play();
         reproduzindoOcean = true;
     }
-    else{
+    else {
         audioObj.pause();
         reproduzindoOcean = false;
     }
@@ -169,123 +169,123 @@ function playAudioThunder() {
         audioObj.play();
         reproduzindoThunder = true;
     }
-    else{
+    else {
         audioObj.pause();
         reproduzindoThunder = false;
     }
 
 }
 
-function moveCardRain(item){
+function moveCardRain(item) {
     var cardImg = item.getElementsByTagName("svg");
 
-    if (cardImg[0].classList.contains("sound-item-click-rain")){
+    if (cardImg[0].classList.contains("sound-item-click-rain")) {
         cardImg[0].classList.remove("sound-item-click-rain");
     }
-    else{
+    else {
         cardImg[0].classList.add("sound-item-click-rain");
     }
 }
 
 
 
-function moveCardFire(item){
+function moveCardFire(item) {
     var cardImg = item.getElementsByTagName("svg");
 
-    if (cardImg[0].classList.contains("sound-item-click-fire")){
+    if (cardImg[0].classList.contains("sound-item-click-fire")) {
         cardImg[0].classList.remove("sound-item-click-fire");
     }
-    else{
+    else {
         cardImg[0].classList.add("sound-item-click-fire");
     }
 }
 
 
-function moveCardBell(item){
+function moveCardBell(item) {
     var cardImg = item.getElementsByTagName("svg");
 
-    if (cardImg[0].classList.contains("sound-item-click-bell")){
+    if (cardImg[0].classList.contains("sound-item-click-bell")) {
         cardImg[0].classList.remove("sound-item-click-bell");
     }
-    else{
+    else {
         cardImg[0].classList.add("sound-item-click-bell");
     }
 }
 
-function moveCardDesk(item){
+function moveCardDesk(item) {
     var cardImg = item.getElementsByTagName("svg");
 
-    if (cardImg[0].classList.contains("sound-item-click-desk")){
+    if (cardImg[0].classList.contains("sound-item-click-desk")) {
         cardImg[0].classList.remove("sound-item-click-desk");
     }
-    else{
+    else {
         cardImg[0].classList.add("sound-item-click-desk");
     }
 }
 
-function moveCardThunder(item){
+function moveCardThunder(item) {
     var cardImg = item.getElementsByTagName("svg");
 
-    if (cardImg[0].classList.contains("sound-item-click-thunder")){
+    if (cardImg[0].classList.contains("sound-item-click-thunder")) {
         cardImg[0].classList.remove("sound-item-click-thunder");
     }
-    else{
+    else {
         cardImg[0].classList.add("sound-item-click-thunder");
     }
 }
 
 
-function moveCardWind(item){
+function moveCardWind(item) {
     var cardImg = item.getElementsByTagName("svg");
 
-    if (cardImg[0].classList.contains("sound-item-click-wind")){
+    if (cardImg[0].classList.contains("sound-item-click-wind")) {
         cardImg[0].classList.remove("sound-item-click-wind");
     }
-    else{
+    else {
         cardImg[0].classList.add("sound-item-click-wind");
     }
 }
 
-function moveCardTrain(item){
+function moveCardTrain(item) {
     var cardImg = item.getElementsByTagName("svg");
 
-    if (cardImg[0].classList.contains("sound-item-click-train")){
+    if (cardImg[0].classList.contains("sound-item-click-train")) {
         cardImg[0].classList.remove("sound-item-click-train");
     }
-    else{
+    else {
         cardImg[0].classList.add("sound-item-click-train");
     }
 }
 
-function moveCardNight(item){
+function moveCardNight(item) {
     var cardImg = item.getElementsByTagName("svg");
 
-    if (cardImg[0].classList.contains("sound-item-click-night")){
+    if (cardImg[0].classList.contains("sound-item-click-night")) {
         cardImg[0].classList.remove("sound-item-click-night");
     }
-    else{
+    else {
         cardImg[0].classList.add("sound-item-click-night");
     }
 }
 
-function moveCardForest(item){
+function moveCardForest(item) {
     var cardImg = item.getElementsByTagName("svg");
 
-    if (cardImg[0].classList.contains("sound-item-click-forest")){
+    if (cardImg[0].classList.contains("sound-item-click-forest")) {
         cardImg[0].classList.remove("sound-item-click-forest");
     }
-    else{
+    else {
         cardImg[0].classList.add("sound-item-click-forest");
     }
 }
 
-function moveCardOcean(item){
+function moveCardOcean(item) {
     var cardImg = item.getElementsByTagName("svg");
 
-    if (cardImg[0].classList.contains("sound-item-click-ocean")){
+    if (cardImg[0].classList.contains("sound-item-click-ocean")) {
         cardImg[0].classList.remove("sound-item-click-ocean");
     }
-    else{
+    else {
         cardImg[0].classList.add("sound-item-click-ocean");
     }
 }
