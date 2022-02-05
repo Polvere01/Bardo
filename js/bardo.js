@@ -36,6 +36,8 @@ function sliderVolumeAudio() {
     var val = document.getElementById("slider-audio-rain").value;
     audioObj = document.getElementById("audio-rain");
     audioObj.volume = val;
+
+    alert(val);
 }
 /*
 window.onload = function(){
