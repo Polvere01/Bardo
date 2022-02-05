@@ -31,6 +31,13 @@ function playAudioRain() {
 
 }
 
+
+function sliderVolumeAudio() {
+    var val = document.getElementById("slider-audio-rain").value;
+    audioObj = document.getElementById("audio-rain");
+    audioObj.volume = val;
+}
+/*
 window.onload = function(){
     var slider = document.getElementById("slider-audio-rain");
     slider.addEventListener('change', function(){
@@ -39,7 +46,7 @@ window.onload = function(){
         audioObj.volume = val;
     });
 };
-
+*/
 
 
 function playAudioFire() {
