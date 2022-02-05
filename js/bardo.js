@@ -10,22 +10,32 @@ var reproduzindoNight = false;
 var reproduzindoForest = false;
 var reproduzindoOcean = false;
 
+
+
 function playAudioRain() {
+    slider = document.getElementById("slider-audio-rain")
     audioObj = document.getElementById("audio-rain")
     audioObj.loop = true;
-    audioObj.volume = 1;
+    audioObj.volume = slider.value;
 
     if (reproduzindoRain == false) {
         audioObj.play();
         reproduzindoRain = true;
+        slider.style.visibility = "visible";
     }
     else {
         audioObj.pause();
         reproduzindoRain = false;
+        slider.style.visibility = "hidden";
     }
 
 }
 
+function sliderVolumeAudio() {
+    var val = document.getElementById("slider-audio-rain").value;
+    audioObj = document.getElementById("audio-rain");
+    audioObj.volume = val;
+}
 
 function playAudioFire() {
     audioObj = document.getElementById("audio-fire")
@@ -177,13 +187,11 @@ function playAudioThunder() {
 }
 
 function moveCardRain(item) {
-    var cardImg = item.getElementsByTagName("svg");
-
-    if (cardImg[0].classList.contains("sound-item-click-rain")) {
-        cardImg[0].classList.remove("sound-item-click-rain");
+    if (item.classList.contains("sound-item-click-rain")) {
+        item.classList.remove("sound-item-click-rain");
     }
     else {
-        cardImg[0].classList.add("sound-item-click-rain");
+        item.classList.add("sound-item-click-rain");
     }
 }
 

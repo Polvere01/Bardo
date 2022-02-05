@@ -2,6 +2,7 @@
     0% {
         transform: translateY(0px);
     }
+
     100% {
         transform: translateY(12px);
     }
@@ -12,6 +13,7 @@
         opacity: 0;
         transform: translateY(0em) rotate(180deg);
     }
+
     100% {
         opacity: 1;
         transform: translateY(30em) rotate(0deg);
@@ -23,6 +25,7 @@
         opacity: 0;
         transform: translateY(0em) rotate(180deg);
     }
+
     100% {
         opacity: 1;
         transform: translateY(55em) rotate(0deg);
@@ -117,9 +120,42 @@ body {
     padding-bottom: 2em;
 }
 
-svg {
-    width: 5em;
+.slider {
+    -webkit-appearance: none;
+    width: 50%;
     margin: 0 auto;
+    display: block;
+    height: 4px;
+    border-radius: 5px;
+    background: #ffffff;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    visibility: hidden;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+svg {
+    width: 6em;
+    margin: 0 auto;
+    margin-bottom: 2em;
     display: block;
     fill: white;
     filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 1.2));
@@ -201,19 +237,30 @@ svg {
     .background-city {
         background-attachment: scroll;
     }
+
     .moon {
         width: 5em;
         height: 5em;
         animation: moveMoonMedia 3s forwards;
         position: absolute;
     }
+
     .top-container {
         width: 80%;
     }
+
     .top-container-title {
         font-size: 2em;
     }
+
     .center-container-subtitle {
         font-size: 1.7em;
+    }
+    
+    .slider{
+        width: 6em;
+    }
+    svg{
+        width: 5em;
     }
 }
